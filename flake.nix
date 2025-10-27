@@ -23,11 +23,7 @@
           pname = "tokyo-night-sddm";
           version = "1.0";
 
-          src = pkgs.fetchFromGitHub {
-            owner = "deephack1982";
-            repo = "tokyo-night-sddm";
-            rev = "main";
-          };
+          src = self;
 
           dontWrapQtApps = true;
           buildInputs = with pkgs.libsForQt5.qt5; [ qtgraphicaleffects ];
@@ -51,10 +47,10 @@
 
           meta = with pkgs.lib; {
             description = "Tokyo Night SDDM theme";
-            homepage = "https://github.com/${src.owner}/${pname}";
+            homepage = "https://github.com/deephack1982/tokyo-night-sddm";
             license = licenses.gpl3;
             platforms = platforms.linux;
-            maintainers = with maintainers; [ deephack1982 ];
+            maintainers = with pkgs.lib.maintainers; [ deephack1982 ];
           };
         };
       });
