@@ -27,7 +27,7 @@
             owner = "deephack1982";
             repo = "tokyo-night-sddm";
             rev = "main";
-            hash = "sha256-JRVVzyefqR2L3UrEK2iWyhUKfPMUNUnfRZmwdz05wL0=";
+            hash = "sha256-aoW4Wgs5Hj/xXdT7anM7W+ODdOQPmiMfS7TQofHPIWA=";
           };
 
           dontWrapQtApps = true;
