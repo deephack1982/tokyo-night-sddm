@@ -2,7 +2,7 @@
   description = "Tokyo Night SDDM theme as a Nix flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
   };
 
   outputs = { self, nixpkgs, ... }:
@@ -21,7 +21,7 @@
       packages = forAllSystems (pkgs: {
         default = pkgs.stdenvNoCC.mkDerivation rec {
           pname = "tokyo-night-sddm";
-          version = "1.0";
+          version = "1.1";
 
           src = self;
 
